@@ -134,7 +134,7 @@ export default class AutoClassifierPlugin extends Plugin {
 		user_prompt = user_prompt.replace("{{input}}", input);
 		user_prompt = user_prompt.replace("{{reference}}", refs.join(","));
 
-		const system_role = this.settings.commandOption.prmpt_template;
+		const system_role = this.settings.commandOption.chat_role;
 
 		// ------- [API Processing] -------
 		// Call API
